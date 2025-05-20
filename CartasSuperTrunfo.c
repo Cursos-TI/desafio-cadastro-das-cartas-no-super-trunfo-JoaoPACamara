@@ -24,6 +24,14 @@ int main() {// Programa de cadastro de cartas do super trunfo
 
     int pontos1;//cadastro de cartas numero 1
     int pontos2;//cadastro de cartas numero 2
+
+    float densp1;
+    float densp2;
+
+    float pibc1;
+    float pibc2;
+
+    
         
     printf("Cadastre suas cartas do Super Trunfo \n");//Titulo do Programa de cadastramentos de duas cartas do super trunfo
 
@@ -87,7 +95,11 @@ int main() {// Programa de cadastro de cartas do super trunfo
 
     printf("Cadastro finalizado!!");//Texto de finalizaçao do cadastro
 
-    printf("\n\n");//espaço entre os cadastros
+densp1 = (float) populacao1 / area1;
+densp2 = (float) populacao2 / area2;
+
+pibc1 =  pib1 / (float)populacao1;
+pibc2 =  pib2 / (float)populacao2;
 
         printf("\n\n");//espaço entre os cadastros
 
@@ -101,6 +113,8 @@ int main() {// Programa de cadastro de cartas do super trunfo
     printf("Area: %.2f\n", area1);
     printf("PIB: %.2f\n", pib1);
     printf("Pontos turisticos: %d\n", pontos1);
+    printf("A densidade populacional é %.2f\n", densp1);
+    printf("O PIB per capita: %.2f\n", pibc1);
 
         printf("\n\n");//espaço entre as cartas cadastradas
 
@@ -112,6 +126,8 @@ int main() {// Programa de cadastro de cartas do super trunfo
     printf("Area: %.2f\n", area2);
     printf("PIB: %.2f\n", pib2);
     printf("Pontos turisticos: %d\n", pontos2);
+    printf("A densidade populacional é %.2f\n", densp2);
+    printf("O PIB per capta é: %.2f\n", pibc2);
 
     return 0;//retorno do programa  
 
