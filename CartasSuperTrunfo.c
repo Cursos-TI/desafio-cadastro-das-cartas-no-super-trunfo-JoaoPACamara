@@ -3,31 +3,40 @@
 int main() {// Programa de cadastro de cartas do super trunfo
     
     //Declaraçao de variaveis
+    
+    //Variaveis para a entrada do nome do estado
+    char estado1[50];
+    char estado2[50];
 
-    char estado1[50];//cadastro de cartas numero 1
-    char estado2[50];//cadastro de cartas numero 2
+    //Variavel para a entrada do codigo da carta
+    char codigo1[10]; 
+    char codigo2[10];
 
-    char codigo1[10];//cadastro de cartas numero 1
-    char codigo2[10];//cadastro de cartas numero 2
+    //Variaveis para a entrada do nome da cidade
+    char cidade1[50];
+    char cidade2[50];
 
-    char cidade1[50];//cadastro de cartas numero 1
-    char cidade2[50];//cadastro de cartas numero 2
+    //Variaveis para a entrada da quantidade populacional
+    int populacao1;
+    int populacao2;
 
-    int populacao1;//cadastro de cartas numero 1
-    int populacao2;//cadastro de cartas numero 2
+    //Variaveis para a entrada da area da cidade
+    float area1;
+    float area2;
 
-    float area1;//cadastro de cartas numero 1
-    float area2;//cadastro de cartas numero 2
+    //Variaveis para a entrada do PIB da cidade
+    float pib1;
+    float pib2;
 
-    float pib1;//cadastro de cartas numero 1
-    float pib2;//cadastro de cartas numero 2
+    //Variaveis para a entrada da quantidade de pontos turisticos
+    int pontos1;
+    int pontos2;
 
-    int pontos1;//cadastro de cartas numero 1
-    int pontos2;//cadastro de cartas numero 2
-
+    //Variaveis de retorno do calculo da densidade populacional dividindo população por area
     float densp1;
     float densp2;
 
+    //Variaveis de retorno do calculo de PIB per capita dividindo PIB por população
     float pibc1;
     float pibc2;
 
@@ -42,7 +51,7 @@ int main() {// Programa de cadastro de cartas do super trunfo
     printf("Digite o nome do estado:\n");//cadastro do nome do estado
     scanf("%s", estado1);
 
-    printf("Digite o codigo do estado:\n");//cadastro do codigo do estado
+    printf("Digite o codigo do estado:\n");//cadastro do codigo da carta
     scanf("%s", codigo1);
 
     printf("Digite o nome da cidade:\n");//cadastro do nome da cidade
@@ -71,7 +80,7 @@ int main() {// Programa de cadastro de cartas do super trunfo
     printf("Digite o nome do estado:\n");//cadastro do nome do estado
     scanf("%s", estado2);
 
-    printf("Digite o codigo do estado:\n");//cadastro do codigo do estado
+    printf("Digite o codigo do estado:\n");//cadastro do codigo da carta
     scanf("%s", codigo2);
 
     printf("Digite o nome da cidade:\n");//cadastro do nome da cidade
@@ -95,11 +104,14 @@ int main() {// Programa de cadastro de cartas do super trunfo
 
     printf("Cadastro finalizado!!");//Texto de finalizaçao do cadastro
 
-densp1 = (float) populacao1 / area1;
-densp2 = (float) populacao2 / area2;
+    //Calculo da densidade populacional
+    densp1 = (float) populacao1 / area1;
+    densp2 = (float) populacao2 / area2;
 
-pibc1 =  pib1 / (float)populacao1;
-pibc2 =  pib2 / (float)populacao2;
+    //Calculo do PIB per capita
+    pibc1 =  pib1 / (float)populacao1;
+    pibc2 =  pib2 / (float)populacao2;
+
 
         printf("\n\n");//espaço entre os cadastros
 
